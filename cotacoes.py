@@ -1,8 +1,5 @@
-from gettext import textdomain
-from click import command
 import requests
-from tkinter import *
-from time import sleep
+
 
 requisicao = requests.get("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL,ETH-BRL")
 requisicao_dic = requisicao.json()
